@@ -1,4 +1,4 @@
-<!-- login.html (After Your Custom Changes) -->
+<!-- login.html (Merged Version after Conflict Resolution) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +19,7 @@
             background-color: #fff;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-        input[type="text"], input[type="password"] {
+        input[type="text"], input[type="password"], input[type="email"] {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
@@ -51,17 +51,24 @@
             <label>Password:</label>
             <input type="password" name="password"><br>
 
-            <!-- Custom Changes Start -->
+            <!-- Keep your custom fields -->
             <label>First Name:</label>
             <input type="text" name="first_name"><br>
 
             <label>Last Name:</label>
             <input type="text" name="last_name"><br>
 
-            <a href="/forgot-password" class="forgot-password">Forgot Password?</a>
-            <!-- Custom Changes End -->
+            <a href="/forgot-password" class="forgot-password">Forgot Password?</a><br>
+
+            <!-- Add new fields from V2 -->
+            <label>Email Address:</label>
+            <input type="email" name="email_address"><br>
+
+            <label>Full Name:</label>
+            <input type="text" name="full_name"><br>
 
             <button type="submit">Login</button>
+            <button type="button">Signup</button>
         </form>
     </div>
 </body>
