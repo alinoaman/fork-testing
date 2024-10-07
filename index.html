@@ -1,4 +1,4 @@
-<!-- login.html (V1 code) -->
+<!-- login.html (After Your Custom Changes) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,6 +34,12 @@
             border: none;
             border-radius: 5px;
         }
+        .forgot-password {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            color: #007bff;
+        }
     </style>
 </head>
 <body>
@@ -44,6 +50,16 @@
 
             <label>Password:</label>
             <input type="password" name="password"><br>
+
+            <!-- Custom Changes Start -->
+            <label>First Name:</label>
+            <input type="text" name="first_name"><br>
+
+            <label>Last Name:</label>
+            <input type="text" name="last_name"><br>
+
+            <a href="/forgot-password" class="forgot-password">Forgot Password?</a>
+            <!-- Custom Changes End -->
 
             <button type="submit">Login</button>
         </form>
